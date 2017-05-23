@@ -154,8 +154,8 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     font-family: 'Lato', sans-serif;
-    color: #000;
-    color: hsl(0, 0%, 0%);
+    color: #0587bf;
+    color: hsl(198, 95%, 38%);
     -ms-word-break: break-word;
     word-break: break-word;
 }
@@ -393,8 +393,8 @@ a:active {
     clear: both;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    background: #0587BF;
+    background: hsl(198, 95%, 38%);
 }
 
 .main-navigation ul {
@@ -443,8 +443,8 @@ a:active {
 .main-navigation li > a:focus {
     color: #fff;
     color: hsl(0, 0%, 100%);
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background: #5DCBF2;
+    background: hsl(196, 85%, 66%);
 }
 
 .main-navigation ul ul :hover > a { }
@@ -845,12 +845,12 @@ a:focus.page-numbers{
 .site-branding {
     padding: 6rem 0;
     text-align: center;
-    background: #0587BF;
-    background: hsl(198, 95%, 38%);
+    background: url(images/sevtub_backgruond.jpg) 100% 70% no-repeat !important; /* Добавляем фон */
+    background-size: cover !important; /* Масштабируем фон */
 }
 
 .title-box {
-    width: 600px;
+    width: 800px;
     max-width: 75%;
     padding: 4rem;
     margin: 0 auto;
@@ -860,11 +860,12 @@ a:focus.page-numbers{
 
 .site-title {
     font-weight: 700;
-    font-size: 40px;
-    font-size: 4.5rem;
+    font-size: 36px;
+    font-size: 3.5rem;
     text-transform: uppercase;
     line-height: normal;
     padding-bottom: 1rem;
+    word-spacing: 800px;
 }
 
 .site-description {
@@ -900,13 +901,27 @@ a:focus.page-numbers{
 
 /* Header responsive */
 @media screen and (max-width: 900px) {
-    .site-branding { padding: 0; }
+    .site-branding {
+        padding: 0;
+        background: url(images/sevtub_backgruond.jpg) center center no-repeat !important; /* Добавляем фон */
+        background-size: cover !important; /* Масштабируем фон */
+    }
 
     .title-box {
         max-width: 100%;
         margin: 0 auto;
         padding: 4rem;
         border: none;
+    }
+
+    .site-title {
+        font-size: 22px;
+        font-size: 2.2rem;
+    }
+
+    .site-description {
+        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
@@ -1785,8 +1800,8 @@ object { max-width: 100%; }
     font-family: 'Lato';
     color: #fff;
     color: hsl(0, 0%, 100%);
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    background: #0587BF;
+    background: hsl(198, 95%, 38%);
 }
 
 .site-footer a {

@@ -13,6 +13,15 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
             <?php get_sidebar( 'footer' ); ?>
 		<div class="site-info">
+			<?php
+			bloginfo( 'name' );
+			print(' © 2017');
+			$sysdate = date('Y');
+			if ($sysdate > 2017) {
+				print('-' . $sysdate);
+			}
+			print('<br/>');
+			?>
 			<?php do_action( 'simone_credits' ); ?>
 			<?php
 			printf(

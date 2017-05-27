@@ -845,8 +845,8 @@ a:focus.page-numbers{
 .site-branding {
     padding: 6rem 0;
     text-align: center;
-    background: url(images/sevtub_backgruond.jpg) 100% 70% no-repeat !important; /* Добавляем фон */
-    background-size: cover !important; /* Масштабируем фон */
+    background: url(images/sevtub_backgruond.jpg) 100% 70% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */
 }
 
 .title-box {
@@ -899,18 +899,24 @@ a:focus.page-numbers{
     background: hsla(0, 0%, 0%, .7);
 }
 
+.bvi-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
 /* Header responsive */
 @media screen and (max-width: 900px) {
     .site-branding {
         padding: 0;
-        background: url(images/sevtub_backgruond.jpg) center center no-repeat !important; /* Добавляем фон */
-        background-size: cover !important; /* Масштабируем фон */
+        background: url(images/sevtub_backgruond.jpg) center center no-repeat; /* Добавляем фон */
+        background-size: cover; /* Масштабируем фон */
     }
 
     .title-box {
         max-width: 100%;
         margin: 0 auto;
-        padding: 4rem;
+        padding: 2rem;
         border: none;
     }
 
@@ -923,10 +929,27 @@ a:focus.page-numbers{
         font-size: 18px;
         font-size: 1.8rem;
     }
+
+    .bvi-wrapper {
+        text-align: center;
+    }
+
+    .bvi-container {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    float: none;
+    display: inline-block;
+}
+
 }
 
 @media screen and (max-width: 399px) {
-    .title-box { padding: 2rem; }
+    .title-box { padding: 1rem; }
+
+    .site-title {
+        font-size: 20px;
+        font-size: 2rem;
+    }
 }
 
 /* Header search */
@@ -1810,3 +1833,26 @@ object { max-width: 100%; }
 }
 
 .site-info { text-align: center; }
+
+.image-link {
+    display: block;
+    margin-top: 5px;
+    background-size: cover;
+}
+
+#doctor92-link {
+    background-image: url(images/doctor92-logo.png);
+    width: 150px;
+    height: 49px;
+}
+#gov-dept-link {
+    background-image: url(images/gov-dept-logo.png);
+    width: 120px;
+    height: 146px;
+}
+
+#minzdrav-link {
+    background-image: url(images/minzdrav-logo.png);
+    width: 240px;
+    height: 66px;
+}

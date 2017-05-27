@@ -163,9 +163,8 @@ function simone_sanitize_archive( $value ) {
 function simone_customizer_css() {
     ?>
     <style type="text/css">
-        .site-branding {
-            background: <?php echo get_theme_mod( 'simone_header_color' ); ?>;
-        }
+
+        /*.site-branding was removed because it overrided actual style's background*/
 
         .category-list a:hover,
         .entry-meta a:hover,

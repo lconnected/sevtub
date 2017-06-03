@@ -110,6 +110,8 @@ table { /* tables still need 'cellspacing="0"' in the markup */
 	border-spacing: 0;
 }
 caption, th, td {
+  padding-left: 5px;
+  padding-right: 5px;
 	font-weight: normal;
 	text-align: left;
 }
@@ -426,8 +428,8 @@ a:active {
     display: none;
     float: left;
     padding: 0;
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background: #0587BF;
+    background: hsl(198, 95%, 38%);
 }
 
 .main-navigation ul ul ul {
@@ -435,7 +437,11 @@ a:active {
     left: 100%;
 }
 
-.main-navigation ul ul a { width: 200px; }
+.main-navigation ul ul a {
+    width: 200px;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
 
 .main-navigation ul ul li { }
 
@@ -451,8 +457,8 @@ a:active {
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a:focus {
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    background: #5DCBF2;
+    background: hsl(196, 85%, 66%);
 }
 
 .main-navigation ul li:hover > ul { display: block; }
@@ -468,17 +474,19 @@ a:active {
     background: white;
 }
 
-.main-navigation .current_page_ancestor {
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+.main-navigation .current_page_ancestor,
+.main-navigation .current_page_ancestor > a {
+    color: #313131;
+    color: hsl(0, 0%, 19%);
+    background: white;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
     color: #fff;
     color: hsl(0, 0%, 100%);
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    background: #0587BF;
+    background: hsl(198, 95%, 38%);
 }
 
 /* Small menu */
@@ -502,8 +510,8 @@ a:active {
 
     .menu-toggle a:hover,
     .menu-toggle a:focus {
-        background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+        background: #0587BF;
+        background: hsl(198, 95%, 38%);
     }
 
     .main-navigation.toggled .nav-menu {
@@ -528,8 +536,8 @@ a:active {
 
     .main-navigation li:hover > a,
     .main-navigation li > a:focus {
-        background: #313131;
-        background: hsl(0, 0%, 19%);
+        background: #5DCBF2;
+        background: hsl(196, 85%, 66%);
     }
 
     .main-navigation ul ul,
@@ -539,8 +547,8 @@ a:active {
         left: 0;
         display: block;
         float: none;
-        background: #313131;
-        background: hsl(0, 0%, 19%);
+        background: #0587BF;
+        background: hsl(198, 95%, 38%);
     }
 
     .main-navigation ul ul a { width: 100%; }
@@ -549,8 +557,8 @@ a:active {
     .main-navigation ul ul a:hover,
     .main-navigation ul a:focus,
     .main-navigation ul ul a:focus{
-        background: #4d4d4d;
-        background: hsl(0, 0%, 30%);
+        background: #5DCBF2;
+        background: hsl(196, 85%, 66%);
     }
 
     .main-navigation .current_page_ancestor { background: inherit; }
@@ -566,10 +574,9 @@ a:active {
     .main-navigation .current_page_item > a:focus,
     .main-navigation .current_page_item li:focus,
     .main-navigation .current_page_parent .current_page_item > a  {
-        color: #fff;
-        color: hsl(0, 0%, 100%);
-        background: #4d4d4d;
-        background: hsl(0, 0%, 30%);
+        color: #313131;
+        color: hsl(0, 0%, 19%);
+        background: white;
     }
 
 } /* End responsive menu */
@@ -1216,59 +1223,64 @@ blockquote cite {
     font-size: 1.8rem;
 }
 
+.table-container {
+    width: 95%;
+    overflow: auto;
+}
+
 /* Smaller fonts for smaller screens */
 @media screen and (max-width: 680px) {
     .entry-title {
-        font-size: 32px;
-        font-size: 3.2rem;
+        font-size: 28px;
+        font-size: 2.8rem;
         line-height: 1.3em;
     }
     .entry-content h1 {
-        font-size: 28px;
-        font-size: 2.8rem;
-    }
-
-    .entry-content h2 {
         font-size: 26px;
         font-size: 2.6rem;
     }
 
-    .entry-content h3 {
+    .entry-content h2 {
         font-size: 24px;
         font-size: 2.4rem;
     }
 
-    .entry-content h4 {
+    .entry-content h3 {
         font-size: 22px;
         font-size: 2.2rem;
     }
 
-    .entry-content h5 {
+    .entry-content h4 {
         font-size: 20px;
-        font-size: 2rem;
+        font-size: 2.0rem;
+    }
+
+    .entry-content h5 {
+        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .entry-content h6 {
-        font-size: 18px;
-        font-size: 1.8rem;
+        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .entry-content p,
     .entry-content ul,
     .entry-content ol  {
-        font-size: 18px;
-        font-size: 1.8rem;
+        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .entry-content blockquote p {
-        font-size: 22px;
-        font-size: 2.2rem;
+        font-size: 20px;
+        font-size: 2.0rem;
         line-height: 1.5em;
     }
 
     blockquote cite {
-        font-size: 14px;
-        font-size: 1.4rem;
+        font-size: 12px;
+        font-size: 1.2rem;
     }
 }
 

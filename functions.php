@@ -165,6 +165,8 @@ function simone_scripts() {
 
         wp_enqueue_script( 'simone-enquire', get_template_directory_uri() . '/js/enquire.min.js', false, '20140429', true );
 
+        wp_enqueue_script( 'additional', get_template_directory_uri() . '/js/additional.js', array('jquery'), '20140429', true );
+
 
         if (is_single() || is_author() ) {
         	wp_enqueue_script( 'simone-hide', get_template_directory_uri() . '/js/hide.js', array('jquery'), '20140310', true );

@@ -810,13 +810,54 @@ a:focus.page-numbers{
     clear: both;
 }
 
+.contacts-alignleft {
+    display: inline;
+    float: left;
+}
+
+.contacts-alignright {
+    display: inline;
+    float: right;
+}
+
+.contacts-half {
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.map-wrapper > iframe {
+    width: 100%;
+    height: 400px;
+}
+
 /* Alignment responsive */
+@media screen and (max-width: 900px) {
+    .contacts-alignleft, .contacts-alignright {
+        display: block;
+        float: none;
+    }
+
+    .contacts-half {
+        margin: 0 auto 1.6em;
+    }
+
+    .map-wrapper > iframe {
+        width: 100%;
+        height: 230px;
+    }
+}
+
 @media screen and (min-width: 1320px) {
-    .alignleft { margin-left: -160px; }
+    .alignleft, .contacts-alignleft { margin-left: -160px; }
 }
 
 @media screen and (min-width: 1820px) {
-    .alignright { margin-right: -160px; }
+    .alignright, .contacts-alignright { margin-right: -160px; }
 }
 
 /*--------------------------------------------------------------

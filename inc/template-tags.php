@@ -121,11 +121,13 @@ function simone_posted_on() {
 		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
 	}
 
+	$dateFormat = 'd.m.Y';
+
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date( _x('F jS, Y', 'Public posted on date', 'simone') ) ),
+		esc_html( get_the_date( _x($dateFormat, 'Public posted on date', 'simone') ) ),
 		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date( _x('F jS, Y', 'Public modified on date', 'simone') ) )
+		esc_html( get_the_modified_date( _x($dateFormat, 'Public modified on date', 'simone') ) )
 	);
         // Translators: Text wrapped in mobile-hide class is hidden on wider screens.
 	printf( _x( '<span class="byline">Written by %1$s</span><span class="mobile-hide"> on </span><span class="posted-on">%2$s</span><span class="mobile-hide">.</span>', 'mobile-hide class is used to hide connecting elements like "on" and "." on wider screens.', 'simone' ),
